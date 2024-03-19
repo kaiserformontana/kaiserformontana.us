@@ -1,0 +1,160 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Remove the height: 100%; to allow the body to expand as needed */
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    /* These lines are removed to disable flexbox alignment */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: left;
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* Add margin to top and bottom to ensure it's centered vertically without flexbox */
+    margin: auto;
+}
+
+.logo img {
+    max-width: 80%; 
+    margin-bottom: 20px;
+}
+
+/* Other styles remain unchanged */
+
+
+h1 {
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.tagline {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    margin-bottom: 40px; /* Adjust this value as needed to increase/decrease space */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.donation-form {
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type=email] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    font-size: 14px;
+    border-top: 2px solid #4CAF50; /* A green border top for a pop of color */
+}
+
+
+@media (max-width: 768px) {
+    nav a {
+        width: 100%;
+        font-size: 5vw; /* Reduce the font size */
+        margin: 0 2px; /* Reduce the margin */
+        padding: 3px 4px; /* Adjust padding if necessary */
+    }
+
+    .container {
+        max-width: 90%; /* Allows for more fluid resizing on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    h1, .tagline, p {
+        font-size: 5vw; /* Adjust font size based on the width of the viewport */
+    }
+
+    input[type=email], button {
+        padding: 15px; /* Larger padding for easier interaction */
+        font-size: 4vw; /* Larger font size for better readability */
+    }
+
+    .donation-form, .social-links a, nav a {
+        font-size: 4vw; /* Adjusts font size for better readability */
+    }
+    footer {
+        font-size: 12px; /* Slightly smaller text on smaller screens */
+    }
+}
+
+/* For very small screens, you might want further adjustments */
+@media (max-width: 480px) {
+    h1, .tagline {
+        font-size: 6vw; /* Even larger font size for very small screens */
+    }
+
+    .container {
+        max-width: 90%; /* Allows for more fluid resizing on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    nav a {
+        font-size: 4vw; /* Reduce the font size */
+        margin: 0 0px; /* Reduce the margin */
+        padding: 2px 2px; /* Adjust padding if necessary */
+    }
+
+}
